@@ -1,0 +1,36 @@
+.nav-links{
+    float: right;
+    margin: 30px 10px;
+    color: aqua;
+}
+  .nav-links li{
+    margin: 60px 40px;
+    padding: 10px ;
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+    background-color: rgb(0, 247, 255);
+    border-radius: 6px;
+    
+}
+  .navbar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 110px;
+    background-color: black
+}
+  .nav-links h2{
+    margin: -20px -1000px ;
+    padding: 0px ;
+    font-size: 40px;
+    color: white;
+  }
+  .nav-links img{
+    margin: -79px -670px -15px -862px;
+    padding: -10px ; 
+    height: 85px;
+    width: 110px;
+    background-position: left;
+  }

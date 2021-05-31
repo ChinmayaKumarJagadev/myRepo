@@ -1,0 +1,15 @@
+.notfound{
+    margin: 0px 50px 10px 280px ;
+    height: 100px;
+    width: 900px;
+    font-size: 100px ;
+    text-align: center;
+}
+.error1{
+    margin: 10px 20px -60px -250px;
+    height: 100px;
+    width: 900px;
+    font-size: 50px ;
+    color: red;
+    text-align: left;
+}
