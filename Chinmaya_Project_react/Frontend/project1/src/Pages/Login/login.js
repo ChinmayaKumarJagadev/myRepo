@@ -36,17 +36,17 @@ class Loginpage extends React.Component {
                 onSubmit={fields => {
                     axios.post("/login", fields)
                         .then((response) => {
+                            console.log(response)
                             if (response.status === 200) {
                                 alert(response.data.success)
                                 localStorage.setItem("authToken", response.data.token)
                                 if (response.data.code === 200) {
                                     this.props.history.push("/profile")
                                 }
-                                window.location.reload();
+                               // window.location.reload();
                             } else if (response.status === 206) {
                                 alert(response.data.success)
-                                window.location.reload()
-
+                                //window.location.reload()
                             }
                         })
                         .catch((err) => {
@@ -75,15 +75,11 @@ class Loginpage extends React.Component {
                                 <div className="l3">
                                     <button className="btn" type="submit">Login</button>
                                 </div>
-
                             </Form>
                         </div>
                     </div>
-                )
-                }
-            />
-        )
-
+                )  }
+            />      )
     }
 }
 

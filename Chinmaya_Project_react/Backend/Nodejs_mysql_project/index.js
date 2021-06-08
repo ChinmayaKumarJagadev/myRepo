@@ -120,6 +120,7 @@ app.post("/login", async (req, res) => {
             })
         } else {
             if (results.length > 0) {
+                console.log(results)
                 const comparision = await bcrypt.compare(Password, results[0].Password)
                 if (comparision) {
                     const token = jwt.sign({ username: UserName }, "Chinmaya", {
